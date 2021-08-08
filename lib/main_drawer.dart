@@ -13,8 +13,13 @@ class MainDrawer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.all(30),
+                padding: EdgeInsets.fromLTRB(20, 40, 20, 20),
+                height: 200,
+                width: double.infinity,
                 color: Color(0xffcc191f),
+                child: Image(image: AssetImage('assets/images/Logo.png'),
+
+                )
               ),
               SizedBox(
                 height: 20,
@@ -34,12 +39,12 @@ class MainDrawer extends StatelessWidget {
                     fontSize: 20,
                     fontFamily: 'BalsamiqSans'),
               ),
-
               SizedBox(
                 height: 20,
               ),
-              Divider( height: 10,),
-
+              Divider(
+                height: 10,
+              ),
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text('الصفحة الرئيسية'),
@@ -47,23 +52,26 @@ class MainDrawer extends StatelessWidget {
                   Navigator.of(context).pushReplacementNamed('/');
                 },
               ),
-              Divider( height: 10,),
-              ListTile(
-                leading: Icon(Icons.image),
-                title: Text('صور'),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/Photos');
-                },
+              Divider(
+                height: 10,
               ),
-              Divider( height: 10,),
               ListTile(
-                leading: Icon(Icons.attach_file),
-                title: Text('مصادر'),
+                leading: Icon(Icons.link),
+                title: Text('روابط خارجية'),
                 onTap: () {
                   Navigator.of(context).pushReplacementNamed('/Links');
                 },
               ),
-
+              Divider(
+                height: 10,
+              ),
+              ListTile(
+                leading: Icon(Icons.attach_file),
+                title: Text('مصادر'),
+                onTap: () {
+                  Navigator.of(context).pushReplacementNamed('/Resources');
+                },
+              ),
             ],
           ),
         ),

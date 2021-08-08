@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:icrc_project/Screens/links.dart';
-import 'package:icrc_project/Screens/photos.dart';
 import 'package:icrc_project/Screens/resources.dart';
 import 'package:icrc_project/SearchMethod.dart';
 import 'Screens/answers.dart';
+import 'carousel.dart';
 import 'main_drawer.dart';
 import 'home_page.dart';
 
@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
           '/': (context)=> MyHomePage(),
           Answers.routeName: (context)=> Answers(),
           '/home_p': (context)=> Home_P(),
-          '/Photos': (context)=> Photos(),
           '/Links': (context)=> Links(),
           '/Resources': (context)=> Resources(),
 
@@ -57,6 +56,10 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 SizedBox(
                   height: 25,
+                ),
+                Caru(),
+                SizedBox(
+                  height: 15,
                 ),
                 Text("الأسئلة المتكررة", style: TextStyle(
                   fontSize: 25,

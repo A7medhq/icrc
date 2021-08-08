@@ -11,7 +11,7 @@ class Resources extends StatelessWidget {
 
       child: Scaffold(
         appBar: AppBar(
-          title: Text("المصادر"),
+          title: Text("مصادر"),
         ),
         body: null,
         drawer: MainDrawer(),

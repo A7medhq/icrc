@@ -10,13 +10,13 @@ class Answers extends StatelessWidget {
     final Map args = ModalRoute.of(context)!.settings.arguments as Map;
 final answr = subject[args['quest']];
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("السؤال والإجابة"),
-      ),
-      body: Center(
-        child: Directionality(
-          textDirection: TextDirection.rtl,
+    return Directionality(
+      textDirection: TextDirection.rtl,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("السؤال والإجابة"),
+        ),
+        body: Center(
           child: Card(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),

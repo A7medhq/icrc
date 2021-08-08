@@ -58,6 +58,7 @@ void myMethod (){
                       },
                       child: Card(
                         elevation: 1,
+                        color: index%2 == 0? Color(0xffcc191f): Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
@@ -65,8 +66,11 @@ void myMethod (){
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             ListTile(
-                              leading: Icon(Icons.question_answer),
-                              title: Text(c[index]),
+                              leading: Icon(Icons.question_answer,color: index%2 == 0? Colors.white: Colors.black,),
+                              title: Text(c[index], style: TextStyle(
+                                fontWeight:FontWeight.bold,
+                                color: index%2 == 0? Colors.white: Colors.black,
+                              ),),
                             )
                           ],
                         ),
