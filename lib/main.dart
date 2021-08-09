@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData (primaryColor: Color(0xffcc191f),
           accentColor: Color(0xffcc191f)
         ),
-        title: 'ICRC',
+        title: 'القانون الدولي الإنساني',
         routes: {
           '/': (context)=> MyHomePage(),
           Answers.routeName: (context)=> Answers(),

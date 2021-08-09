@@ -19,13 +19,12 @@ class Caru extends StatelessWidget {
             return Container(
               
                 width: MediaQuery.of(context).size.width,
-                margin: EdgeInsets.symmetric(horizontal: 5.0),
 
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(30),
 
                   child: Image(image: AssetImage('$i'),
-                  fit:  BoxFit.contain,
+                  fit:  BoxFit.fill,
                   ),
                 ),
             );

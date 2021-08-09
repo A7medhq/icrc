@@ -56,23 +56,28 @@ void myMethod (){
                           }
                         );
                       },
-                      child: Card(
-                        elevation: 1,
-                        color: index%2 == 0? Color(0xffcc191f): Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            ListTile(
-                              leading: Icon(Icons.question_answer,color: index%2 == 0? Colors.white: Colors.black,),
-                              title: Text(c[index], style: TextStyle(
-                                fontWeight:FontWeight.bold,
-                                color: index%2 == 0? Colors.white: Colors.black,
-                              ),),
-                            )
-                          ],
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(10,0,10,0),
+                        child: Card(
+
+                          elevation: 1,
+                          color: index%2 == 0? Color(0xffcc191f): Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              ListTile(
+                                leading: Icon(Icons.question_answer,color: index%2 == 0? Colors.white: Colors.black,),
+                                title: Text(c[index], style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight:FontWeight.bold,
+                                  color: index%2 == 0? Colors.white: Colors.black,
+                                ),),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
